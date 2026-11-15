@@ -1,0 +1,95 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "fields": [
+        {
+          "id": 1,
+          "name": "row_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": 2,
+          "name": "region",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": 5,
+          "name": "qty",
+          "type": "int32",
+          "required": false
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "fields": [
+        {
+          "id": 1,
+          "name": "row_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": 2,
+          "name": "territory",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": 3,
+          "name": "status",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": 5,
+          "name": "qty",
+          "type": "int64",
+          "required": false
+        }
+      ]
+    },
+    {
+      "version": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "row_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": 3,
+          "name": "status",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": 4,
+          "name": "region",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": 5,
+          "name": "qty",
+          "type": "int64",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "added_fields": {
+    "3": {
+      "version": 2,
+      "initial_default": "new"
+    },
+    "4": {
+      "version": 3,
+      "initial_default": "unassigned"
+    }
+  }
+}

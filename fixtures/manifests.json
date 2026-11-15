@@ -1,0 +1,41 @@
+{
+  "read_v2": {
+    "target_version": 2,
+    "files": [
+      {
+        "path": "data/v1.parquet",
+        "schema_version": 1
+      },
+      {
+        "path": "data/v2.parquet",
+        "schema_version": 2
+      }
+    ]
+  },
+  "read_v3": {
+    "target_version": 3,
+    "files": [
+      {
+        "path": "data/v1.parquet",
+        "schema_version": 1
+      },
+      {
+        "path": "data/v2.parquet",
+        "schema_version": 2
+      },
+      {
+        "path": "data/v3.parquet",
+        "schema_version": 3
+      }
+    ]
+  },
+  "bad_metadata": {
+    "target_version": 3,
+    "files": [
+      {
+        "path": "data/bad-metadata.parquet",
+        "schema_version": 3
+      }
+    ]
+  }
+}
