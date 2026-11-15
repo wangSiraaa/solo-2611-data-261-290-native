@@ -1,0 +1,68 @@
+[
+  {
+    "event_id": "unique1",
+    "stream": "unique",
+    "seq": 1,
+    "local_time": "2024-11-03T00:50:00"
+  },
+  {
+    "event_id": "unique2",
+    "stream": "unique",
+    "seq": 2,
+    "local_time": "2024-11-03T01:50:00"
+  },
+  {
+    "event_id": "unique3",
+    "stream": "unique",
+    "seq": 3,
+    "local_time": "2024-11-03T01:10:00"
+  },
+  {
+    "event_id": "unique4",
+    "stream": "unique",
+    "seq": 4,
+    "local_time": "2024-11-03T02:10:00"
+  },
+  {
+    "event_id": "ambiguous1",
+    "stream": "ambiguous",
+    "seq": 1,
+    "local_time": "2024-11-03T01:10:00"
+  },
+  {
+    "event_id": "ambiguous2",
+    "stream": "ambiguous",
+    "seq": 2,
+    "local_time": "2024-11-03T01:20:00"
+  },
+  {
+    "event_id": "same1",
+    "stream": "same",
+    "seq": 1,
+    "local_time": "2024-11-03T01:20:00"
+  },
+  {
+    "event_id": "same2",
+    "stream": "same",
+    "seq": 2,
+    "local_time": "2024-11-03T01:20:00"
+  },
+  {
+    "event_id": "spring1",
+    "stream": "spring",
+    "seq": 1,
+    "local_time": "2024-03-10T02:30:00"
+  },
+  {
+    "event_id": "badorder1",
+    "stream": "badorder",
+    "seq": 1,
+    "local_time": "2024-11-03T12:01:00"
+  },
+  {
+    "event_id": "badorder2",
+    "stream": "badorder",
+    "seq": 2,
+    "local_time": "2024-11-03T12:00:00"
+  }
+]
