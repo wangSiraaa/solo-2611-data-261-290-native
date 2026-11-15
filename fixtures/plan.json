@@ -1,0 +1,25 @@
+{
+  "dimensions": [
+    "region",
+    "channel"
+  ],
+  "grouping_sets": [
+    [
+      "region",
+      "channel"
+    ],
+    [
+      "region"
+    ],
+    [],
+    [
+      "region"
+    ]
+  ],
+  "aggregates": [
+    "count_star",
+    "count_amount",
+    "sum_amount",
+    "avg_amount"
+  ]
+}

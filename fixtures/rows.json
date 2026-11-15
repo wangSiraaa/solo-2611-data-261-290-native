@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a",
+    "region": "east",
+    "channel": "web",
+    "amount": 10
+  },
+  {
+    "id": "b",
+    "region": "east",
+    "channel": null,
+    "amount": null
+  },
+  {
+    "id": "c",
+    "region": null,
+    "channel": "web",
+    "amount": 20
+  },
+  {
+    "id": "d",
+    "region": null,
+    "channel": "web",
+    "amount": 30
+  },
+  {
+    "id": "e",
+    "region": "west",
+    "channel": "store",
+    "amount": null
+  }
+]
