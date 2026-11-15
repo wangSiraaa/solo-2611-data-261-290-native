@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "torrent": {
+    "name": "package",
+    "piece_length": 8,
+    "num_pieces": 3,
+    "total_length": 17
+  },
+  "complete": false,
+  "summary": {
+    "files_total": 4,
+    "files_complete": 2,
+    "pieces_total": 3,
+    "pieces_verified": 2,
+    "pieces_missing": 1,
+    "pieces_bad": 0
+  },
+  "pieces": [
+    {
+      "index": 0,
+      "status": "verified",
+      "expected_length": 8,
+      "actual_length": 8,
+      "expected_sha1": "279877be14da6fc24d9c689d0bcd0a56e1c6693d",
+      "actual_sha1": "279877be14da6fc24d9c689d0bcd0a56e1c6693d",
+      "source_path": "/workspace/fixtures/pieces/chunk-0.bin"
+    },
+    {
+      "index": 1,
+      "status": "missing",
+      "expected_length": 8,
+      "actual_length": null,
+      "expected_sha1": "c7fe9bc478a44e950294806db2f09bfd31a66223",
+      "actual_sha1": null,
+      "source_path": null
+    },
+    {
+      "index": 2,
+      "status": "verified",
+      "expected_length": 1,
+      "actual_length": 1,
+      "expected_sha1": "0ab8318acaf6e678dd02e2b5c343ed41111b393d",
+      "actual_sha1": "0ab8318acaf6e678dd02e2b5c343ed41111b393d",
+      "source_path": "/workspace/fixtures/pieces/chunk-2.bin"
+    }
+  ],
+  "files": [
+    {
+      "path": "a.txt",
+      "length": 3,
+      "status": "complete",
+      "location": "final",
+      "coverage": {
+        "covered_bytes": 3,
+        "length": 3,
+        "fraction": 1.0,
+        "covered_ranges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "uncovered_ranges": []
+      },
+      "fragments": [
+        {
+          "piece_index": 0,
+          "source_piece_range": [
+            0,
+            3
+          ],
+          "target_file_range": [
+            0,
+            3
+          ],
+          "logical_range": [
+            0,
+            3
+          ]
+        }
+      ],
+      "sha1": "a9993e364706816aba3e25717850c26c9cd0d89d"
+    },
+    {
+      "path": "empty",
+      "length": 0,
+      "status": "complete",
+      "location": "final",
+      "coverage": {
+        "covered_bytes": 0,
+        "length": 0,
+        "fraction": 1.0,
+        "covered_ranges": [],
+        "uncovered_ranges": []
+      },
+      "fragments": [],
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "sub/b.bin",
+      "length": 10,
+      "status": "partial",
+      "location": "partial",
+      "coverage": {
+        "covered_bytes": 5,
+        "length": 10,
+        "fraction": 0.5,
+        "covered_ranges": [
+          [
+            0,
+            5
+          ]
+        ],
+        "uncovered_ranges": [
+          [
+            5,
+            10
+          ]
+        ]
+      },
+      "fragments": [
+        {
+          "piece_index": 0,
+          "source_piece_range": [
+            3,
+            8
+          ],
+          "target_file_range": [
+            0,
+            5
+          ],
+          "logical_range": [
+            3,
+            8
+          ]
+        }
+      ],
+      "sha1": null
+    },
+    {
+      "path": "tail.txt",
+      "length": 4,
+      "status": "partial",
+      "location": "partial",
+      "coverage": {
+        "covered_bytes": 1,
+        "length": 4,
+        "fraction": 0.25,
+        "covered_ranges": [
+          [
+            3,
+            4
+          ]
+        ],
+        "uncovered_ranges": [
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "fragments": [
+        {
+          "piece_index": 2,
+          "source_piece_range": [
+            0,
+            1
+          ],
+          "target_file_range": [
+            3,
+            4
+          ],
+          "logical_range": [
+            16,
+            17
+          ]
+        }
+      ],
+      "sha1": null
+    }
+  ]
+}
