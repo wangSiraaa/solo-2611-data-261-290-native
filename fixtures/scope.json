@@ -1,0 +1,7 @@
+{
+  "max_rows_per_table": 100,
+  "join": "roots r INNER JOIN left_rows l ON l.root_id=r.id INNER JOIN right_rows t ON t.root_id=r.id",
+  "order": "root id, left id, right id in Unicode codepoint order",
+  "sampling": "with replacement; random.Random(seed).randrange(N) repeated k times",
+  "cost": "no savings requirement"
+}
