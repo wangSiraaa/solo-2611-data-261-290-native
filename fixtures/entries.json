@@ -1,0 +1,70 @@
+[
+  {
+    "id": "root",
+    "parent_id": null,
+    "name": "",
+    "type": "dir"
+  },
+  {
+    "id": "d1",
+    "parent_id": "root",
+    "name": "Report",
+    "type": "dir"
+  },
+  {
+    "id": "d2",
+    "parent_id": "root",
+    "name": "report",
+    "type": "dir"
+  },
+  {
+    "id": "e1",
+    "parent_id": "root",
+    "name": "é",
+    "type": "dir"
+  },
+  {
+    "id": "e2",
+    "parent_id": "root",
+    "name": "é",
+    "type": "dir"
+  },
+  {
+    "id": "e3",
+    "parent_id": "root",
+    "name": "tail. ",
+    "type": "dir"
+  },
+  {
+    "id": "f1",
+    "parent_id": "d1",
+    "name": "A.csv",
+    "type": "file",
+    "blob_id": "one",
+    "sha256": "309b0e45a73d3fc5325e2b6ed0a01ef8b9cde6b05a5633c1f893f970d52bfddc"
+  },
+  {
+    "id": "f2",
+    "parent_id": "d1",
+    "name": "a.csv",
+    "type": "file",
+    "blob_id": "two",
+    "sha256": "fa39ab7bea456781477b3697b4380ea256af38b0fe75aa3b0d477fc74be511be"
+  },
+  {
+    "id": "f3",
+    "parent_id": "d1",
+    "name": "a.csv~2",
+    "type": "file",
+    "blob_id": "one",
+    "sha256": "309b0e45a73d3fc5325e2b6ed0a01ef8b9cde6b05a5633c1f893f970d52bfddc"
+  },
+  {
+    "id": "f4",
+    "parent_id": "d2",
+    "name": "CON.csv",
+    "type": "file",
+    "blob_id": "two",
+    "sha256": "fa39ab7bea456781477b3697b4380ea256af38b0fe75aa3b0d477fc74be511be"
+  }
+]

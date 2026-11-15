@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "one",
+    "entry_id": "f1"
+  },
+  {
+    "dataset": "two",
+    "entry_id": "f2"
+  },
+  {
+    "dataset": "alias",
+    "entry_id": "f1"
+  },
+  {
+    "dataset": "nested",
+    "entry_id": "f4"
+  }
+]
