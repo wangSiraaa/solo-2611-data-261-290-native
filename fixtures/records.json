@@ -1,0 +1,74 @@
+[
+  {
+    "record_id": "v1",
+    "row": [
+      "u1",
+      "d1"
+    ],
+    "column": [
+      "a|b",
+      "c"
+    ],
+    "value": null
+  },
+  {
+    "record_id": "v2",
+    "row": [
+      "u1",
+      "d1"
+    ],
+    "column": [
+      "a|b",
+      "c"
+    ],
+    "value": null
+  },
+  {
+    "record_id": "v3",
+    "row": [
+      "u1",
+      "d1"
+    ],
+    "column": [
+      "a",
+      "b|c"
+    ],
+    "value": ""
+  },
+  {
+    "record_id": "v4",
+    "row": [
+      "u2",
+      "d1"
+    ],
+    "column": [
+      "a",
+      "b|c"
+    ],
+    "value": "中文,\n\"quoted\""
+  },
+  {
+    "record_id": "v5",
+    "row": [
+      "u2",
+      "d1"
+    ],
+    "column": [
+      "a|b",
+      "c"
+    ],
+    "value": true
+  },
+  {
+    "record_id": "v6",
+    "row": [
+      "u2",
+      "d1"
+    ],
+    "column": [
+      "a|b",
+      "c"
+    ],
+    "value": 1
+  }
+]
