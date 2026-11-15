@@ -1,0 +1,3 @@
+syntax = "proto2"; package demo;
+message Info { optional int32 code = 1; optional string note = 2; }
+message Sample { optional int32 value = 1; optional Info info = 2; oneof choice { string text = 3; Info details = 4; } repeated sint32 readings = 5 [packed = true]; }

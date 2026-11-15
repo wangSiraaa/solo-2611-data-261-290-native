@@ -1,0 +1,8 @@
+{
+  "max_payload_bytes": 4096,
+  "max_frames": 50,
+  "descriptor": "descriptor.pb",
+  "message": "demo.Sample",
+  "schema_changes": false,
+  "unknown_fields": "skip legal unknown fields and report presence"
+}
