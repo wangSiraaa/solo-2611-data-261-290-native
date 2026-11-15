@@ -1,0 +1,112 @@
+[
+  {
+    "set_id": 0,
+    "grouping_id": 0,
+    "region": null,
+    "channel": "web",
+    "count_star": 2,
+    "count_amount": 2,
+    "sum_amount": 50,
+    "avg_amount": "25/1"
+  },
+  {
+    "set_id": 0,
+    "grouping_id": 0,
+    "region": "east",
+    "channel": null,
+    "count_star": 1,
+    "count_amount": 0,
+    "sum_amount": null,
+    "avg_amount": null
+  },
+  {
+    "set_id": 0,
+    "grouping_id": 0,
+    "region": "east",
+    "channel": "web",
+    "count_star": 1,
+    "count_amount": 1,
+    "sum_amount": 10,
+    "avg_amount": "10/1"
+  },
+  {
+    "set_id": 0,
+    "grouping_id": 0,
+    "region": "west",
+    "channel": "store",
+    "count_star": 1,
+    "count_amount": 0,
+    "sum_amount": null,
+    "avg_amount": null
+  },
+  {
+    "set_id": 1,
+    "grouping_id": 1,
+    "region": null,
+    "channel": null,
+    "count_star": 2,
+    "count_amount": 2,
+    "sum_amount": 50,
+    "avg_amount": "25/1"
+  },
+  {
+    "set_id": 1,
+    "grouping_id": 1,
+    "region": "east",
+    "channel": null,
+    "count_star": 2,
+    "count_amount": 1,
+    "sum_amount": 10,
+    "avg_amount": "10/1"
+  },
+  {
+    "set_id": 1,
+    "grouping_id": 1,
+    "region": "west",
+    "channel": null,
+    "count_star": 1,
+    "count_amount": 0,
+    "sum_amount": null,
+    "avg_amount": null
+  },
+  {
+    "set_id": 2,
+    "grouping_id": 3,
+    "region": null,
+    "channel": null,
+    "count_star": 5,
+    "count_amount": 3,
+    "sum_amount": 60,
+    "avg_amount": "20/1"
+  },
+  {
+    "set_id": 3,
+    "grouping_id": 1,
+    "region": null,
+    "channel": null,
+    "count_star": 2,
+    "count_amount": 2,
+    "sum_amount": 50,
+    "avg_amount": "25/1"
+  },
+  {
+    "set_id": 3,
+    "grouping_id": 1,
+    "region": "east",
+    "channel": null,
+    "count_star": 2,
+    "count_amount": 1,
+    "sum_amount": 10,
+    "avg_amount": "10/1"
+  },
+  {
+    "set_id": 3,
+    "grouping_id": 1,
+    "region": "west",
+    "channel": null,
+    "count_star": 1,
+    "count_amount": 0,
+    "sum_amount": null,
+    "avg_amount": null
+  }
+]

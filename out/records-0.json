@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a",
+    "region": "east",
+    "channel": "web",
+    "amount": 10
+  },
+  {
+    "id": "b",
+    "region": "east",
+    "channel": null,
+    "amount": null
+  }
+]

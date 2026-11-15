@@ -1,0 +1,99 @@
+{
+  "state_format": "aggpipe-state/v1",
+  "plan": {
+    "dimensions": [
+      "region",
+      "channel"
+    ],
+    "grouping_sets": [
+      [
+        "region",
+        "channel"
+      ],
+      [
+        "region"
+      ],
+      [],
+      [
+        "region"
+      ]
+    ],
+    "aggregates": [
+      "count_star",
+      "count_amount",
+      "sum_amount",
+      "avg_amount"
+    ],
+    "grouping_ids": [
+      0,
+      1,
+      3,
+      1
+    ]
+  },
+  "plan_fingerprint": "9aac1e7549d29aa82708cdbe81e33661146b731386ebe9906cc6c8e9683e3df2",
+  "chunk_id": "chunk-0",
+  "record_count": 2,
+  "groups_by_set": [
+    {
+      "set_id": 0,
+      "groups": [
+        {
+          "key": [
+            "east",
+            null
+          ],
+          "row_count": 1,
+          "nonnull_count": 0,
+          "sum_int": 0
+        },
+        {
+          "key": [
+            "east",
+            "web"
+          ],
+          "row_count": 1,
+          "nonnull_count": 1,
+          "sum_int": 10
+        }
+      ]
+    },
+    {
+      "set_id": 1,
+      "groups": [
+        {
+          "key": [
+            "east"
+          ],
+          "row_count": 2,
+          "nonnull_count": 1,
+          "sum_int": 10
+        }
+      ]
+    },
+    {
+      "set_id": 2,
+      "groups": [
+        {
+          "key": [],
+          "row_count": 2,
+          "nonnull_count": 1,
+          "sum_int": 10
+        }
+      ]
+    },
+    {
+      "set_id": 3,
+      "groups": [
+        {
+          "key": [
+            "east"
+          ],
+          "row_count": 2,
+          "nonnull_count": 1,
+          "sum_int": 10
+        }
+      ]
+    }
+  ]
+}
