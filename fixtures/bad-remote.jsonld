@@ -1,0 +1,5 @@
+{
+  "@context": "https://invalid.test/context",
+  "@id": "x",
+  "name": "must not fetch"
+}

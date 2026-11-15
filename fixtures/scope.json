@@ -1,0 +1,28 @@
+{
+  "max_nodes": 50,
+  "remote_context": false,
+  "context_keywords": [
+    "@base",
+    "@vocab",
+    "@id",
+    "@type",
+    "@language",
+    "@container"
+  ],
+  "container": "@language only",
+  "data_keywords": [
+    "@context",
+    "@id",
+    "@type",
+    "@value",
+    "@language",
+    "@list",
+    "@reverse"
+  ],
+  "unsupported": [
+    "@graph",
+    "@import",
+    "@included",
+    "@nest"
+  ]
+}

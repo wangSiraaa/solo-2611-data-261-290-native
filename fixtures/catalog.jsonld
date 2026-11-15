@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@base": "https://data.test/",
+    "@vocab": "https://schema.test/",
+    "ex": "https://example.test/",
+    "link": {
+      "@id": "related",
+      "@type": "@id"
+    },
+    "labels": {
+      "@id": "name",
+      "@container": "@language"
+    }
+  },
+  "@id": "items/a",
+  "@type": "Product",
+  "labels": {
+    "en": [
+      "Tea",
+      "Tea"
+    ],
+    "zh": "茶"
+  },
+  "link": "items/b",
+  "steps": {
+    "@list": [
+      "wash",
+      "heat",
+      "heat"
+    ]
+  },
+  "empty": {
+    "@list": []
+  },
+  "parts": [
+    {
+      "@context": {
+        "name": "https://local.test/name"
+      },
+      "@id": "parts/p",
+      "name": "局部名"
+    },
+    {
+      "@id": "parts/q",
+      "name": "默认名"
+    }
+  ],
+  "@reverse": {
+    "related": {
+      "@id": "items/c"
+    }
+  }
+}
