@@ -1,0 +1,12 @@
+{
+  "restore_ms": 1100,
+  "inspect_ms": [
+    1100,
+    1400,
+    1600
+  ],
+  "modes": [
+    "preserve-deadline",
+    "freeze-remaining"
+  ]
+}

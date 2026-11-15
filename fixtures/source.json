@@ -1,0 +1,35 @@
+{
+  "snapshot_ms": 1000,
+  "entries": [
+    {
+      "key_b64": "cA==",
+      "value_b64": "cGVybQ==",
+      "expires_at_ms": null
+    },
+    {
+      "key_b64": "ZQ==",
+      "value_b64": "ZXF1YWw=",
+      "expires_at_ms": 1000
+    },
+    {
+      "key_b64": "cw==",
+      "value_b64": "c2hvcnQ=",
+      "expires_at_ms": 1050
+    },
+    {
+      "key_b64": "bA==",
+      "value_b64": "bG9uZw==",
+      "expires_at_ms": 1300
+    },
+    {
+      "key_b64": "",
+      "value_b64": "",
+      "expires_at_ms": null
+    },
+    {
+      "key_b64": "/wA=",
+      "value_b64": "AAE=",
+      "expires_at_ms": 1500
+    }
+  ]
+}
