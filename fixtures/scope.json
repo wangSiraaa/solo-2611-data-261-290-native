@@ -1,0 +1,18 @@
+{
+  "namespace": "urn:oasis:names:tc:xliff:document:2.0",
+  "supported": [
+    "unit",
+    "originalData/data",
+    "segment",
+    "source",
+    "target",
+    "ph",
+    "pc"
+  ],
+  "max_units": 20,
+  "accepted_states": [
+    "translated",
+    "final"
+  ],
+  "code_policy": "IDs and kind identical per segment; each pc retains the same descendant code IDs; sibling order may change"
+}

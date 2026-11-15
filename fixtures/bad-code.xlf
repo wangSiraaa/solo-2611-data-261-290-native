@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="zh"><file id="f1">
+<unit id="u1"><originalData><data id="d1">&lt;br/&gt;</data><data id="d2">&lt;b&gt;</data><data id="d3">&lt;/b&gt;</data><data id="d4">{name}</data></originalData><segment id="s1" state="final"><source>Hello <pc id="bold" dataRefStart="d2" dataRefEnd="d3"><ph id="name" dataRef="d4"/></pc>!<ph id="break" dataRef="d1"/> </source><target><ph id="break" dataRef="d1"/>你好 <pc id="bold" dataRefStart="d2" dataRefEnd="d3"></pc><ph id="name" dataRef="d4"/>！ </target></segment></unit>
+<unit id="u2"><originalData><data id="d1">{price}</data></originalData><segment id="s1" state="translated"><source>Price <ph id="break" dataRef="d1"/></source><target>价格 <ph id="break" dataRef="d1"/></target></segment><segment id="s2"><source>Pending</source></segment><segment id="s3" state="final"><source>Empty label</source><target/></segment></unit>
+<unit id="u3" translate="no"><segment id="s1" state="final"><source>STOP</source><target>停止</target></segment></unit>
+</file></xliff>
