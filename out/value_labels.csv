@@ -1,0 +1,13 @@
+variable,code,label
+score,0.0,零分
+score,1.0,已答
+score,42.0,已答
+score,-99.0,拒答
+score,90.0,保留编码
+score,99.0,保留编码
+satisfaction,1.0,不满意
+satisfaction,2.0,一般
+satisfaction,3.0,满意
+status,NA,未回答
+status,SKIP,跳过
+status,OK,正常

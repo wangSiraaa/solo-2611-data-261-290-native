@@ -1,0 +1,5 @@
+var_index,variable,label,value_type,original_type,storage_width
+1,respondent,,string,A3,3
+2,score,评分,numeric,F8.2,8
+3,satisfaction,满意度,numeric,F8.2,8
+4,status,状态,string,A4,4

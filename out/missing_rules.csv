@@ -1,0 +1,6 @@
+variable,rule_index,kind,lo,hi
+score,1,range,90.0,99.0
+score,2,discrete,-99.0,-99.0
+satisfaction,1,discrete,-99.0,-99.0
+status,1,discrete,NA,NA
+status,2,discrete,SKIP,SKIP
