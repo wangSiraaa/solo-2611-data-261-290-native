@@ -1,0 +1,428 @@
+{
+  "format": "bitmap-quant-index",
+  "index_stats": {
+    "elements": 7,
+    "elements_per_row": [
+      0,
+      0,
+      1,
+      2,
+      2,
+      1,
+      1
+    ],
+    "empty_array_rows": 1,
+    "kind_distinct": 2,
+    "null_array_rows": 1,
+    "null_kind_elements": 2,
+    "null_qty_elements": 2,
+    "qty_distinct": 4,
+    "rows": 7,
+    "rows_with_elements": 5
+  },
+  "results": [
+    {
+      "filtered": [
+        "r4"
+      ],
+      "id": "any_same",
+      "result_sets": {
+        "FALSE": [
+          "r1",
+          "r3",
+          "r5"
+        ],
+        "TRUE": [
+          "r4"
+        ],
+        "UNKNOWN": [
+          "r0",
+          "r2",
+          "r6"
+        ]
+      },
+      "row_counts": {
+        "F": 3,
+        "T": 1,
+        "U": 3
+      },
+      "steps": [
+        {
+          "counts": {
+            "F": 2,
+            "T": 3,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "kind",
+          "implementation": "bitmap",
+          "node": "eq",
+          "value": "red"
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 2,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "qty",
+          "implementation": "value-bitmaps",
+          "merged_values": [
+            9
+          ],
+          "node": "ge",
+          "value": 5
+        },
+        {
+          "counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "node": "and",
+          "operands": [
+            {
+              "F": 2,
+              "T": 3,
+              "U": 2
+            },
+            {
+              "F": 3,
+              "T": 2,
+              "U": 2
+            }
+          ]
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "from_domain": "E",
+          "from_size": 7,
+          "node": "any",
+          "source_counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          }
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "node": "result"
+        }
+      ]
+    },
+    {
+      "filtered": [
+        "r1"
+      ],
+      "id": "all_same",
+      "result_sets": {
+        "FALSE": [
+          "r3",
+          "r4",
+          "r5"
+        ],
+        "TRUE": [
+          "r1"
+        ],
+        "UNKNOWN": [
+          "r0",
+          "r2",
+          "r6"
+        ]
+      },
+      "row_counts": {
+        "F": 3,
+        "T": 1,
+        "U": 3
+      },
+      "steps": [
+        {
+          "counts": {
+            "F": 2,
+            "T": 3,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "kind",
+          "implementation": "bitmap",
+          "node": "eq",
+          "value": "red"
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 2,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "qty",
+          "implementation": "value-bitmaps",
+          "merged_values": [
+            9
+          ],
+          "node": "ge",
+          "value": 5
+        },
+        {
+          "counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "node": "and",
+          "operands": [
+            {
+              "F": 2,
+              "T": 3,
+              "U": 2
+            },
+            {
+              "F": 3,
+              "T": 2,
+              "U": 2
+            }
+          ]
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "from_domain": "E",
+          "from_size": 7,
+          "node": "all",
+          "source_counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          }
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "node": "result"
+        }
+      ]
+    },
+    {
+      "filtered": [
+        "r1",
+        "r3",
+        "r5"
+      ],
+      "id": "not_any",
+      "result_sets": {
+        "FALSE": [
+          "r4"
+        ],
+        "TRUE": [
+          "r1",
+          "r3",
+          "r5"
+        ],
+        "UNKNOWN": [
+          "r0",
+          "r2",
+          "r6"
+        ]
+      },
+      "row_counts": {
+        "F": 1,
+        "T": 3,
+        "U": 3
+      },
+      "steps": [
+        {
+          "counts": {
+            "F": 2,
+            "T": 3,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "kind",
+          "implementation": "bitmap",
+          "node": "eq",
+          "value": "red"
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 2,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "qty",
+          "implementation": "value-bitmaps",
+          "merged_values": [
+            9
+          ],
+          "node": "ge",
+          "value": 5
+        },
+        {
+          "counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "node": "and",
+          "operands": [
+            {
+              "F": 2,
+              "T": 3,
+              "U": 2
+            },
+            {
+              "F": 3,
+              "T": 2,
+              "U": 2
+            }
+          ]
+        },
+        {
+          "counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "from_domain": "E",
+          "from_size": 7,
+          "node": "any",
+          "source_counts": {
+            "F": 4,
+            "T": 1,
+            "U": 2
+          }
+        },
+        {
+          "counts": {
+            "F": 1,
+            "T": 3,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "input_counts": {
+            "F": 3,
+            "T": 1,
+            "U": 3
+          },
+          "node": "not"
+        },
+        {
+          "counts": {
+            "F": 1,
+            "T": 3,
+            "U": 3
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "node": "result"
+        }
+      ]
+    },
+    {
+      "filtered": [
+        "r2",
+        "r6"
+      ],
+      "id": "any_null",
+      "result_sets": {
+        "FALSE": [
+          "r1",
+          "r3",
+          "r4",
+          "r5"
+        ],
+        "TRUE": [
+          "r2",
+          "r6"
+        ],
+        "UNKNOWN": [
+          "r0"
+        ]
+      },
+      "row_counts": {
+        "F": 4,
+        "T": 2,
+        "U": 1
+      },
+      "steps": [
+        {
+          "counts": {
+            "F": 5,
+            "T": 2,
+            "U": 0
+          },
+          "domain": "E",
+          "domain_size": 7,
+          "field": "qty",
+          "implementation": "null-bitmap",
+          "node": "is_null"
+        },
+        {
+          "counts": {
+            "F": 4,
+            "T": 2,
+            "U": 1
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "from_domain": "E",
+          "from_size": 7,
+          "node": "any",
+          "source_counts": {
+            "F": 5,
+            "T": 2,
+            "U": 0
+          }
+        },
+        {
+          "counts": {
+            "F": 4,
+            "T": 2,
+            "U": 1
+          },
+          "domain": "R",
+          "domain_size": 7,
+          "node": "result"
+        }
+      ]
+    }
+  ]
+}
