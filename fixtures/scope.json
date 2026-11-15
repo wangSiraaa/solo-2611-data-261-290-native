@@ -1,0 +1,23 @@
+{
+  "schema": "IFC4",
+  "elements": [
+    "IfcWall"
+  ],
+  "types": [
+    "IfcWallType"
+  ],
+  "properties": [
+    "IfcPropertySingleValue"
+  ],
+  "value_types": [
+    "IfcLabel",
+    "IfcBoolean",
+    "IfcLengthMeasure"
+  ],
+  "units": [
+    "METRE",
+    "MILLI METRE"
+  ],
+  "max_elements": 20,
+  "geometry": false
+}
