@@ -1,0 +1,86 @@
+[
+  {
+    "id": "duplicates",
+    "steps": [
+      {
+        "child": [
+          "items",
+          "items"
+        ]
+      },
+      {
+        "index": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prices",
+    "steps": [
+      {
+        "descendant": "price"
+      }
+    ]
+  },
+  {
+    "id": "filtered",
+    "steps": [
+      {
+        "child": [
+          "items"
+        ]
+      },
+      {
+        "filter": {
+          "gt": [
+            {
+              "current": [
+                "price"
+              ]
+            },
+            {
+              "root": [
+                "limit"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "present",
+    "steps": [
+      {
+        "child": [
+          "items"
+        ]
+      },
+      {
+        "filter": {
+          "exists": {
+            "current": [
+              "price"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "escaped",
+    "steps": [
+      {
+        "child": [
+          "a/b"
+        ]
+      },
+      {
+        "child": [
+          "~key"
+        ]
+      }
+    ]
+  }
+]

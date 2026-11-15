@@ -1,0 +1,32 @@
+{
+  "limit": 5,
+  "items": [
+    {
+      "name": "a",
+      "price": null
+    },
+    {
+      "name": "b",
+      "price": 7
+    },
+    {
+      "name": "c"
+    },
+    {
+      "name": "d",
+      "price": 2
+    }
+  ],
+  "a/b": {
+    "~key": 9
+  },
+  "nested": {
+    "items": [
+      {
+        "name": "e",
+        "price": 9
+      }
+    ]
+  },
+  "price": 0
+}
