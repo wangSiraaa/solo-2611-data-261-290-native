@@ -1,0 +1,83 @@
+[
+  {
+    "sample_id": "early",
+    "decision_time": 5,
+    "feature_start": 0,
+    "label_end": 8,
+    "payload": {
+      "x": 1
+    }
+  },
+  {
+    "sample_id": "label-cross",
+    "decision_time": 12,
+    "feature_start": 10,
+    "label_end": 22,
+    "payload": {
+      "x": 2
+    }
+  },
+  {
+    "sample_id": "test-a",
+    "decision_time": 22,
+    "feature_start": 20,
+    "label_end": 25,
+    "payload": {
+      "x": 3
+    }
+  },
+  {
+    "sample_id": "test-b",
+    "decision_time": 28,
+    "feature_start": 28,
+    "label_end": 31,
+    "payload": {
+      "x": 4
+    }
+  },
+  {
+    "sample_id": "both",
+    "decision_time": 31,
+    "feature_start": 30,
+    "label_end": 34,
+    "payload": {
+      "x": 5
+    }
+  },
+  {
+    "sample_id": "embargo-only",
+    "decision_time": 33,
+    "feature_start": 32,
+    "label_end": 35,
+    "payload": {
+      "x": 6
+    }
+  },
+  {
+    "sample_id": "touch-left",
+    "decision_time": 18,
+    "feature_start": 16,
+    "label_end": 20,
+    "payload": {
+      "x": 7
+    }
+  },
+  {
+    "sample_id": "touch-right",
+    "decision_time": 35,
+    "feature_start": 31,
+    "label_end": 36,
+    "payload": {
+      "x": 8
+    }
+  },
+  {
+    "sample_id": "late",
+    "decision_time": 40,
+    "feature_start": 39,
+    "label_end": 43,
+    "payload": {
+      "x": 9
+    }
+  }
+]

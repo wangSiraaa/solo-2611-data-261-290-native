@@ -1,0 +1,9 @@
+[
+  {
+    "sample_id": "bad",
+    "decision_time": 31,
+    "feature_start": 23,
+    "label_end": 28,
+    "payload": {}
+  }
+]

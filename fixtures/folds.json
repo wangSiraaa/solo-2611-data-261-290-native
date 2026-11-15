@@ -1,0 +1,14 @@
+[
+  {
+    "fold_id": "f1",
+    "test_start": 20,
+    "test_end": 30,
+    "embargo_seconds": 5
+  },
+  {
+    "fold_id": "empty",
+    "test_start": 100,
+    "test_end": 110,
+    "embargo_seconds": 0
+  }
+]
