@@ -1,0 +1,37 @@
+{
+  "sources": [
+    "crm",
+    "billing",
+    "support",
+    "web"
+  ],
+  "fields": {
+    "name": "string",
+    "credit": "integer",
+    "active": "boolean"
+  },
+  "authority": {
+    "name": [
+      [
+        "crm",
+        "support"
+      ],
+      [
+        "support",
+        "web"
+      ]
+    ],
+    "credit": [
+      [
+        "billing",
+        "crm"
+      ]
+    ],
+    "active": [
+      [
+        "support",
+        "web"
+      ]
+    ]
+  }
+}

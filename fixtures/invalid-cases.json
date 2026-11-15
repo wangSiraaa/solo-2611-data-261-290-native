@@ -1,0 +1,13 @@
+{
+  "name_cycle_add_edge": [
+    "web",
+    "crm"
+  ],
+  "boolean_as_integer": {
+    "entity_id": "invalid",
+    "source": "crm",
+    "values": {
+      "credit": true
+    }
+  }
+}

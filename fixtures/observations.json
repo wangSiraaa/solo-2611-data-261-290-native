@@ -1,0 +1,69 @@
+[
+  {
+    "entity_id": "e1",
+    "source": "crm",
+    "values": {
+      "name": "Alice",
+      "credit": 20
+    }
+  },
+  {
+    "entity_id": "e1",
+    "source": "support",
+    "values": {
+      "name": "A",
+      "active": null
+    }
+  },
+  {
+    "entity_id": "e1",
+    "source": "web",
+    "values": {
+      "name": "Old",
+      "credit": 10,
+      "active": true
+    }
+  },
+  {
+    "entity_id": "e1",
+    "source": "billing",
+    "values": {
+      "credit": 30
+    }
+  },
+  {
+    "entity_id": "e2",
+    "source": "crm",
+    "values": {}
+  },
+  {
+    "entity_id": "e2",
+    "source": "support",
+    "values": {
+      "name": "Bob",
+      "credit": 5
+    }
+  },
+  {
+    "entity_id": "e2",
+    "source": "web",
+    "values": {
+      "name": "B",
+      "credit": 5
+    }
+  },
+  {
+    "entity_id": "e3",
+    "source": "crm",
+    "values": {
+      "name": null
+    }
+  },
+  {
+    "entity_id": "e3",
+    "source": "billing",
+    "values": {
+      "name": "Charlie"
+    }
+  }
+]
