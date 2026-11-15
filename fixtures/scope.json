@@ -1,0 +1,11 @@
+{
+  "encoding": "UTF-8",
+  "control_tags": [
+    "001",
+    "005"
+  ],
+  "link_pattern": "TAG-NN[/suffix]",
+  "orphan_occurrence": "00",
+  "max_records": 20,
+  "max_fields_per_record": 50
+}
