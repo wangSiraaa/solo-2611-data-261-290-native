@@ -1,0 +1,63 @@
+[
+  {
+    "row_id": "r0",
+    "items": null
+  },
+  {
+    "row_id": "r1",
+    "items": []
+  },
+  {
+    "row_id": "r2",
+    "items": [
+      {
+        "kind": "red",
+        "qty": null
+      }
+    ]
+  },
+  {
+    "row_id": "r3",
+    "items": [
+      {
+        "kind": "red",
+        "qty": 1
+      },
+      {
+        "kind": "blue",
+        "qty": 9
+      }
+    ]
+  },
+  {
+    "row_id": "r4",
+    "items": [
+      {
+        "kind": "red",
+        "qty": 9
+      },
+      {
+        "kind": null,
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "row_id": "r5",
+    "items": [
+      {
+        "kind": "blue",
+        "qty": 0
+      }
+    ]
+  },
+  {
+    "row_id": "r6",
+    "items": [
+      {
+        "kind": null,
+        "qty": null
+      }
+    ]
+  }
+]

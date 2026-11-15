@@ -1,0 +1,75 @@
+[
+  {
+    "id": "any_same",
+    "expr": {
+      "any": {
+        "and": [
+          {
+            "eq": [
+              "kind",
+              "red"
+            ]
+          },
+          {
+            "ge": [
+              "qty",
+              5
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "all_same",
+    "expr": {
+      "all": {
+        "and": [
+          {
+            "eq": [
+              "kind",
+              "red"
+            ]
+          },
+          {
+            "ge": [
+              "qty",
+              5
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "not_any",
+    "expr": {
+      "not": {
+        "any": {
+          "and": [
+            {
+              "eq": [
+                "kind",
+                "red"
+              ]
+            },
+            {
+              "ge": [
+                "qty",
+                5
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "any_null",
+    "expr": {
+      "any": {
+        "is_null": "qty"
+      }
+    }
+  }
+]
