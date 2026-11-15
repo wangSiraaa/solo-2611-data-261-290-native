@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0",
+  "source_file": "fixtures/bad-code.xlf",
+  "scope": {
+    "namespace": "urn:oasis:names:tc:xliff:document:2.0",
+    "supported": [
+      "unit",
+      "originalData/data",
+      "segment",
+      "source",
+      "target",
+      "ph",
+      "pc"
+    ],
+    "max_units": 20,
+    "accepted_states": [
+      "translated",
+      "final"
+    ],
+    "code_policy": "IDs and kind identical per segment; each pc retains the same descendant code IDs; sibling order may change"
+  },
+  "file": {
+    "id": "f1",
+    "status": "ok"
+  },
+  "stats": {
+    "segments_total": 5,
+    "segments_trainable": 1,
+    "segments_excluded": 4,
+    "diagnostics_total": 1,
+    "segment_diagnostics": 1,
+    "file_fatal": false
+  },
+  "code_table": {
+    "u1": {
+      "d1": {
+        "payload": "<br/>",
+        "duplicate": false
+      },
+      "d2": {
+        "payload": "<b>",
+        "duplicate": false
+      },
+      "d3": {
+        "payload": "</b>",
+        "duplicate": false
+      },
+      "d4": {
+        "payload": "{name}",
+        "duplicate": false
+      }
+    },
+    "u2": {
+      "d1": {
+        "payload": "{price}",
+        "duplicate": false
+      }
+    },
+    "u3": {}
+  },
+  "manifest": [
+    {
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u1",
+        "segment_id": "s1",
+        "unit_ordinal": 0,
+        "segment_ordinal": 0
+      },
+      "unit_translate": "yes",
+      "state": "final",
+      "has_target": true,
+      "target_empty": false,
+      "source": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "Hello ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]"
+          },
+          {
+            "type": "open",
+            "value": "pc[bold].open",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/pc[@id='bold'][0]",
+            "code_id": "bold",
+            "ref": "d2"
+          },
+          {
+            "type": "placeholder",
+            "value": "ph[name]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/pc[@id='bold'][0]/ph[@id='name'][0]",
+            "code_id": "name",
+            "ref": "d4"
+          },
+          {
+            "type": "close",
+            "value": "pc[bold].close",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/pc[@id='bold'][0]",
+            "code_id": "bold",
+            "ref": "d3",
+            "pair_index": 1
+          },
+          {
+            "type": "text",
+            "value": "!",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/pc[@id='bold'][0]"
+          },
+          {
+            "type": "placeholder",
+            "value": "ph[break]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/ph[@id='break'][1]",
+            "code_id": "break",
+            "ref": "d1"
+          },
+          {
+            "type": "text",
+            "value": " ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/source[0]/ph[@id='break'][1]"
+          }
+        ],
+        "serialized": "Hello ⟦pc[bold].open⟧⟦ph[name]⟧⟦pc[bold].close⟧!⟦ph[break]⟧ ",
+        "pc_containment": {
+          "bold": [
+            "name"
+          ]
+        }
+      },
+      "target": {
+        "tokens": [
+          {
+            "type": "placeholder",
+            "value": "ph[break]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/ph[@id='break'][0]",
+            "code_id": "break",
+            "ref": "d1"
+          },
+          {
+            "type": "text",
+            "value": "你好 ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/ph[@id='break'][0]"
+          },
+          {
+            "type": "open",
+            "value": "pc[bold].open",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/pc[@id='bold'][1]",
+            "code_id": "bold",
+            "ref": "d2"
+          },
+          {
+            "type": "close",
+            "value": "pc[bold].close",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/pc[@id='bold'][1]",
+            "code_id": "bold",
+            "ref": "d3",
+            "pair_index": 2
+          },
+          {
+            "type": "placeholder",
+            "value": "ph[name]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/ph[@id='name'][2]",
+            "code_id": "name",
+            "ref": "d4"
+          },
+          {
+            "type": "text",
+            "value": "！ ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]/target[1]/ph[@id='name'][2]"
+          }
+        ],
+        "serialized": "⟦ph[break]⟧你好 ⟦pc[bold].open⟧⟦pc[bold].close⟧⟦ph[name]⟧！ ",
+        "pc_containment": {
+          "bold": []
+        }
+      },
+      "code_ids": {
+        "source": [
+          "bold",
+          "name",
+          "break"
+        ],
+        "target": [
+          "break",
+          "bold",
+          "name"
+        ]
+      },
+      "trainable": false,
+      "reasons": [
+        "code_mismatch"
+      ],
+      "diagnostic_codes": [
+        "pc_containment_mismatch"
+      ]
+    },
+    {
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u2",
+        "segment_id": "s1",
+        "unit_ordinal": 1,
+        "segment_ordinal": 0
+      },
+      "unit_translate": "yes",
+      "state": "translated",
+      "has_target": true,
+      "target_empty": false,
+      "source": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "Price ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/source[0]"
+          },
+          {
+            "type": "placeholder",
+            "value": "ph[break]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/source[0]/ph[@id='break'][0]",
+            "code_id": "break",
+            "ref": "d1"
+          }
+        ],
+        "serialized": "Price ⟦ph[break]⟧",
+        "pc_containment": {}
+      },
+      "target": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "价格 ",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/target[1]"
+          },
+          {
+            "type": "placeholder",
+            "value": "ph[break]",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/target[1]/ph[@id='break'][0]",
+            "code_id": "break",
+            "ref": "d1"
+          }
+        ],
+        "serialized": "价格 ⟦ph[break]⟧",
+        "pc_containment": {}
+      },
+      "code_ids": {
+        "source": [
+          "break"
+        ],
+        "target": [
+          "break"
+        ]
+      },
+      "trainable": true,
+      "reasons": [],
+      "diagnostic_codes": []
+    },
+    {
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u2",
+        "segment_id": "s2",
+        "unit_ordinal": 1,
+        "segment_ordinal": 1
+      },
+      "unit_translate": "yes",
+      "state": "initial",
+      "has_target": false,
+      "target_empty": false,
+      "source": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "Pending",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s2'][2]/source[0]"
+          }
+        ],
+        "serialized": "Pending",
+        "pc_containment": {}
+      },
+      "target": null,
+      "code_ids": {
+        "source": [],
+        "target": []
+      },
+      "trainable": false,
+      "reasons": [
+        "state_not_accepted",
+        "target_missing"
+      ],
+      "diagnostic_codes": []
+    },
+    {
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u2",
+        "segment_id": "s3",
+        "unit_ordinal": 1,
+        "segment_ordinal": 2
+      },
+      "unit_translate": "yes",
+      "state": "final",
+      "has_target": true,
+      "target_empty": true,
+      "source": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "Empty label",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s3'][3]/source[0]"
+          }
+        ],
+        "serialized": "Empty label",
+        "pc_containment": {}
+      },
+      "target": {
+        "tokens": [],
+        "serialized": "",
+        "pc_containment": {}
+      },
+      "code_ids": {
+        "source": [],
+        "target": []
+      },
+      "trainable": false,
+      "reasons": [
+        "target_empty"
+      ],
+      "diagnostic_codes": []
+    },
+    {
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u3",
+        "segment_id": "s1",
+        "unit_ordinal": 2,
+        "segment_ordinal": 0
+      },
+      "unit_translate": "no",
+      "state": "final",
+      "has_target": true,
+      "target_empty": false,
+      "source": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "STOP",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u3'][2]/segment[@id='s1'][0]/source[0]"
+          }
+        ],
+        "serialized": "STOP",
+        "pc_containment": {}
+      },
+      "target": {
+        "tokens": [
+          {
+            "type": "text",
+            "value": "停止",
+            "path": "/xliff/file[@id='f1'][0]/unit[@id='u3'][2]/segment[@id='s1'][0]/target[1]"
+          }
+        ],
+        "serialized": "停止",
+        "pc_containment": {}
+      },
+      "code_ids": {
+        "source": [],
+        "target": []
+      },
+      "trainable": false,
+      "reasons": [
+        "unit_translate_no"
+      ],
+      "diagnostic_codes": []
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "u2/s1",
+      "identity": {
+        "file_id": "f1",
+        "unit_id": "u2",
+        "segment_id": "s1",
+        "unit_ordinal": 1,
+        "segment_ordinal": 0
+      },
+      "state": "translated",
+      "source_tokens": [
+        {
+          "type": "text",
+          "value": "Price ",
+          "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/source[0]"
+        },
+        {
+          "type": "placeholder",
+          "value": "ph[break]",
+          "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/source[0]/ph[@id='break'][0]",
+          "code_id": "break",
+          "ref": "d1"
+        }
+      ],
+      "target_tokens": [
+        {
+          "type": "text",
+          "value": "价格 ",
+          "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/target[1]"
+        },
+        {
+          "type": "placeholder",
+          "value": "ph[break]",
+          "path": "/xliff/file[@id='f1'][0]/unit[@id='u2'][1]/segment[@id='s1'][1]/target[1]/ph[@id='break'][0]",
+          "code_id": "break",
+          "ref": "d1"
+        }
+      ],
+      "source_serialized": "Price ⟦ph[break]⟧",
+      "target_serialized": "价格 ⟦ph[break]⟧",
+      "code_ids": [
+        "break"
+      ],
+      "code_payloads": {
+        "break": {
+          "kind": "placeholder",
+          "refs": {
+            "d1": "{price}"
+          }
+        }
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "pc_containment_mismatch",
+      "severity": "error",
+      "message": "pc bold 内代码集合变化: source=['name'] target=[]",
+      "location": {
+        "file_id": "f1",
+        "unit_id": "u1",
+        "segment_id": "s1",
+        "path": "/xliff/file[@id='f1'][0]/unit[@id='u1'][0]/segment[@id='s1'][1]"
+      }
+    }
+  ]
+}
