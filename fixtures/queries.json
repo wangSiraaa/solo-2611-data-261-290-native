@@ -1,0 +1,34 @@
+[
+  {
+    "id": "mcv",
+    "op": "eq",
+    "value": 1
+  },
+  {
+    "id": "hole",
+    "op": "eq",
+    "value": 5
+  },
+  {
+    "id": "range",
+    "op": "range",
+    "lo": 2,
+    "hi": 10
+  },
+  {
+    "id": "outside",
+    "op": "range",
+    "lo": 100,
+    "hi": 120
+  },
+  {
+    "id": "null",
+    "op": "is_null"
+  },
+  {
+    "id": "all",
+    "op": "range",
+    "lo": -100,
+    "hi": 100
+  }
+]

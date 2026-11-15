@@ -1,0 +1,5 @@
+{
+  "mcv_limit": 2,
+  "bucket_limit": 3,
+  "column": "x"
+}
