@@ -1,0 +1,64 @@
+[
+  {
+    "query": "qa"
+  },
+  {
+    "query": "empty"
+  },
+  {
+    "query": "qb"
+  },
+  {
+    "put": {
+      "id": "r1",
+      "category": "A",
+      "amount": 5,
+      "note": "changed-note-only"
+    }
+  },
+  {
+    "query": "qa"
+  },
+  {
+    "put": {
+      "id": "r3",
+      "category": "C",
+      "amount": 4,
+      "note": ""
+    }
+  },
+  {
+    "query": "empty"
+  },
+  {
+    "put": {
+      "id": "r2",
+      "category": "A",
+      "amount": 7,
+      "note": "moved"
+    }
+  },
+  {
+    "query": "qa"
+  },
+  {
+    "query": "qb"
+  },
+  {
+    "delete": "r1"
+  },
+  {
+    "query": "qa"
+  },
+  {
+    "put": {
+      "id": "outside",
+      "category": "Z",
+      "amount": 100,
+      "note": ""
+    }
+  },
+  {
+    "query": "qa"
+  }
+]

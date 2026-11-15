@@ -1,0 +1,20 @@
+[
+  {
+    "id": "qa",
+    "category": "A",
+    "lo": 0,
+    "hi": 10
+  },
+  {
+    "id": "empty",
+    "category": "C",
+    "lo": 0,
+    "hi": 10
+  },
+  {
+    "id": "qb",
+    "category": "B",
+    "lo": 10,
+    "hi": 30
+  }
+]

@@ -1,0 +1,1 @@
+缓存查询固定为 category 精确匹配且 lo<=amount<hi 的 count(*)、sum(amount)；空集 sum=NULL。category/id/note为文本，amount/lo/hi为整数，lo<hi。缓存键用查询内容(category,lo,hi)，展示id不属于键。每次put是一条完整源行新增/替换，delete要求id存在。对一个已有缓存：只要旧行或新行满足谓词，且其对结果的贡献(count=1,amount)与另一状态不同，就必须失效；两者都不满足，或者都满足且amount相同，则保留。旧行不存在/新行不存在视为不贡献。查询结果为空仍记录谓词依赖，不只记录已命中id。note从未参与谓词/结果。更新后下次query才重新计算，不要求主动更新结果。结果与缓存元数据持久保存在SQLite，单进程串行。

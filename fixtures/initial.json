@@ -1,0 +1,14 @@
+[
+  {
+    "id": "r1",
+    "category": "A",
+    "amount": 5,
+    "note": "old"
+  },
+  {
+    "id": "r2",
+    "category": "B",
+    "amount": 20,
+    "note": "same"
+  }
+]
