@@ -1,0 +1,173 @@
+{
+  "tool": "protolog-ingest",
+  "input": {
+    "path": "fixtures/truncated.bin",
+    "size_bytes": 84,
+    "sha256": "bc9aed131d3b2e61e68784b00f9f12f75d462d55a4eb8a838e30dbd8a47dc969"
+  },
+  "descriptor": {
+    "message": "demo.Sample",
+    "file": "schema.proto",
+    "package": "demo",
+    "path": "/workspace/fixtures/descriptor.pb",
+    "sha256": "d4808d58afc0122e11549f907556f2e30ee2dd1a29b1b0453021908f8f1b6fb7",
+    "schema_proto_warnings": []
+  },
+  "limits": {
+    "max_payload_bytes": 4096,
+    "max_frames": 50
+  },
+  "complete": false,
+  "stop_reason": "truncated payload",
+  "counts": {
+    "ok": 5,
+    "bad_payload": 0,
+    "truncated": 1,
+    "framing_error": 0
+  },
+  "frames_total": 6,
+  "frames": [
+    {
+      "index": 0,
+      "offset": 0,
+      "status": "ok",
+      "declared_length": 0,
+      "payload_range": [
+        4,
+        4
+      ],
+      "values": {},
+      "presence": [],
+      "oneof": {
+        "choice": null
+      },
+      "unknown_fields": [],
+      "diagnostics": []
+    },
+    {
+      "index": 1,
+      "offset": 4,
+      "status": "ok",
+      "declared_length": 2,
+      "payload_range": [
+        8,
+        10
+      ],
+      "values": {
+        "value": 0
+      },
+      "presence": [
+        "value"
+      ],
+      "oneof": {
+        "choice": null
+      },
+      "unknown_fields": [],
+      "diagnostics": []
+    },
+    {
+      "index": 2,
+      "offset": 10,
+      "status": "ok",
+      "declared_length": 22,
+      "payload_range": [
+        14,
+        36
+      ],
+      "values": {
+        "info": {
+          "code": 7,
+          "note": "合并"
+        },
+        "readings": [
+          -1,
+          2,
+          0,
+          3
+        ]
+      },
+      "presence": [
+        "info",
+        "info.code",
+        "info.note",
+        "readings"
+      ],
+      "oneof": {
+        "choice": null
+      },
+      "unknown_fields": [],
+      "diagnostics": []
+    },
+    {
+      "index": 3,
+      "offset": 36,
+      "status": "ok",
+      "declared_length": 18,
+      "payload_range": [
+        40,
+        58
+      ],
+      "values": {
+        "details": {
+          "note": "new"
+        }
+      },
+      "presence": [
+        "details",
+        "details.note"
+      ],
+      "oneof": {
+        "choice": "details"
+      },
+      "unknown_fields": [],
+      "diagnostics": []
+    },
+    {
+      "index": 4,
+      "offset": 58,
+      "status": "ok",
+      "declared_length": 15,
+      "payload_range": [
+        62,
+        77
+      ],
+      "values": {
+        "details": {
+          "code": 2,
+          "note": "kept"
+        }
+      },
+      "presence": [
+        "details",
+        "details.code",
+        "details.note"
+      ],
+      "oneof": {
+        "choice": "details"
+      },
+      "unknown_fields": [
+        99
+      ],
+      "diagnostics": [
+        "unknown field(s) #99 skipped (legal wire format, not in descriptor)"
+      ]
+    },
+    {
+      "index": 5,
+      "offset": 77,
+      "status": "truncated",
+      "declared_length": 6,
+      "payload_range": [
+        81,
+        84
+      ],
+      "values": {},
+      "presence": [],
+      "oneof": {},
+      "unknown_fields": [],
+      "diagnostics": [
+        "truncated payload at offset 81: declared 6 bytes, only 3 remain; file stops here"
+      ]
+    }
+  ]
+}

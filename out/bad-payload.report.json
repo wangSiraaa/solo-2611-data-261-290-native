@@ -1,0 +1,69 @@
+{
+  "tool": "protolog-ingest",
+  "input": {
+    "path": "fixtures/bad-payload.bin",
+    "size_bytes": 12,
+    "sha256": "7c37262e602a17241ab71adeea4a0921b9c2e5b65460092771bfe93efec69cdc"
+  },
+  "descriptor": {
+    "message": "demo.Sample",
+    "file": "schema.proto",
+    "package": "demo",
+    "path": "/workspace/fixtures/descriptor.pb",
+    "sha256": "d4808d58afc0122e11549f907556f2e30ee2dd1a29b1b0453021908f8f1b6fb7",
+    "schema_proto_warnings": []
+  },
+  "limits": {
+    "max_payload_bytes": 4096,
+    "max_frames": 50
+  },
+  "complete": true,
+  "stop_reason": null,
+  "counts": {
+    "ok": 1,
+    "bad_payload": 1,
+    "truncated": 0,
+    "framing_error": 0
+  },
+  "frames_total": 2,
+  "frames": [
+    {
+      "index": 0,
+      "offset": 0,
+      "status": "bad_payload",
+      "declared_length": 2,
+      "payload_range": [
+        4,
+        6
+      ],
+      "values": {},
+      "presence": [],
+      "oneof": {},
+      "unknown_fields": [],
+      "diagnostics": [
+        "corrupt payload in frame 0 (file offset 4): length-delimited field 2 declares 127 bytes, only 0 remain; frame isolated, continuing at offset 6"
+      ]
+    },
+    {
+      "index": 1,
+      "offset": 6,
+      "status": "ok",
+      "declared_length": 2,
+      "payload_range": [
+        10,
+        12
+      ],
+      "values": {
+        "value": 0
+      },
+      "presence": [
+        "value"
+      ],
+      "oneof": {
+        "choice": null
+      },
+      "unknown_fields": [],
+      "diagnostics": []
+    }
+  ]
+}
