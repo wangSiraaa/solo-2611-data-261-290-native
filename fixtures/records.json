@@ -1,0 +1,43 @@
+[
+  {
+    "row_id": "r1",
+    "version": "v1",
+    "code": "A",
+    "context": {
+      "sector": "retail"
+    },
+    "amount": "10.00"
+  },
+  {
+    "row_id": "r2",
+    "version": "v1",
+    "code": "A",
+    "context": {
+      "channel": "store"
+    },
+    "amount": "3.20"
+  },
+  {
+    "row_id": "r3",
+    "version": "v1",
+    "code": "B",
+    "context": {},
+    "amount": "0.00"
+  },
+  {
+    "row_id": "r4",
+    "version": "v1",
+    "code": "C",
+    "context": {},
+    "amount": "2.00"
+  },
+  {
+    "row_id": "r5",
+    "version": "v1",
+    "code": "A",
+    "context": {
+      "sector": "unknown"
+    },
+    "amount": "1.00"
+  }
+]

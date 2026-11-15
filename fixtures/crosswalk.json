@@ -1,0 +1,58 @@
+{
+  "source_version": "v1",
+  "target_version": "v2",
+  "source_codes": [
+    "A",
+    "B",
+    "C"
+  ],
+  "target_codes": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "domains": {
+    "sector": [
+      "retail",
+      "service"
+    ],
+    "channel": [
+      "online",
+      "store"
+    ]
+  },
+  "cases": [
+    {
+      "id": "a-r",
+      "code": "A",
+      "when": {
+        "sector": [
+          "retail"
+        ]
+      },
+      "to": "X"
+    },
+    {
+      "id": "a-s",
+      "code": "A",
+      "when": {
+        "sector": [
+          "service"
+        ]
+      },
+      "to": "Y"
+    },
+    {
+      "id": "b",
+      "code": "B",
+      "when": {},
+      "to": "Z"
+    },
+    {
+      "id": "c",
+      "code": "C",
+      "when": {},
+      "to": null
+    }
+  ]
+}
