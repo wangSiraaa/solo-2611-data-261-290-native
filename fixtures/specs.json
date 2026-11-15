@@ -1,0 +1,37 @@
+{
+  "specs": [
+    {
+      "id": 1,
+      "fields": [
+        {
+          "id": 101,
+          "source_id": 3,
+          "transform": "truncate",
+          "width": 10
+        },
+        {
+          "id": 102,
+          "source_id": 4,
+          "transform": "day"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fields": [
+        {
+          "id": 201,
+          "source_id": 2,
+          "transform": "truncate",
+          "width": 2
+        },
+        {
+          "id": 202,
+          "source_id": 3,
+          "transform": "bucket",
+          "buckets": 4
+        }
+      ]
+    }
+  ]
+}

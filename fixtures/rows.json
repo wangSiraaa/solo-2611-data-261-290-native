@@ -1,0 +1,32 @@
+[
+  {
+    "row_id": "a",
+    "customer": "__NULL__",
+    "amount": -1,
+    "ts": "2026-11-15T00:30:00+08:00"
+  },
+  {
+    "row_id": "b",
+    "customer": null,
+    "amount": -10,
+    "ts": "2026-11-14T16:30:00Z"
+  },
+  {
+    "row_id": "c",
+    "customer": "a/b",
+    "amount": 0,
+    "ts": "1970-01-01T00:00:00Z"
+  },
+  {
+    "row_id": "d",
+    "customer": "😀字x",
+    "amount": 9,
+    "ts": "1969-12-31T23:00:00Z"
+  },
+  {
+    "row_id": "e",
+    "customer": "ab",
+    "amount": 10,
+    "ts": null
+  }
+]
