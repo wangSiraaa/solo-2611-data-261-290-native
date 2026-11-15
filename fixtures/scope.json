@@ -1,0 +1,11 @@
+{
+  "max_rows": 30,
+  "max_variables": 8,
+  "variable_types": [
+    "numeric",
+    "string"
+  ],
+  "numeric_missing": "up to 3 discrete or one closed range plus one discrete outside it",
+  "string_missing": "declared discrete values only",
+  "special_formats": false
+}
