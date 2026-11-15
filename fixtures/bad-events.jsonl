@@ -1,0 +1,2 @@
+{"host": "h", "boot": "b1", "tick": 0, "seq": 1, "kind": "SNAPSHOT", "processes": [{"pid": 1, "birth_id": "init", "image": "/init"}, {"pid": 7, "birth_id": "old7", "image": "/old"}]}
+{"host": "h", "boot": "b1", "tick": 1, "seq": 2, "kind": "FORK", "pid": 7, "birth_id": "bad", "parent_pid": 1}

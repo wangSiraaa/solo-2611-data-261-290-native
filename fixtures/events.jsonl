@@ -1,0 +1,9 @@
+{"host": "h", "boot": "b2", "tick": 0, "seq": 1, "kind": "SNAPSHOT", "processes": [{"pid": 7, "birth_id": "fresh7", "image": "/fresh"}]}
+{"host": "h", "boot": "b1", "tick": 23, "seq": 16, "kind": "SNAPSHOT", "processes": [{"pid": 1, "birth_id": "init", "image": "/init"}, {"pid": 7, "birth_id": "third7", "image": "/after"}]}
+{"host": "h", "boot": "b1", "tick": 21, "seq": 14, "kind": "EXEC", "pid": 7, "image": "/untrusted"}
+{"host": "h", "boot": "b1", "tick": 20, "seq": 12, "kind": "LOST"}
+{"host": "h", "boot": "b1", "tick": 17, "seq": 10, "kind": "FORK", "pid": 7, "birth_id": "new7", "parent_pid": 1}
+{"host": "h", "boot": "b1", "tick": 15, "seq": 8, "kind": "EXIT", "pid": 7}
+{"host": "h", "boot": "b1", "tick": 12, "seq": 6, "kind": "FORK", "pid": 8, "birth_id": "child8", "parent_pid": 7}
+{"host": "h", "boot": "b1", "tick": 10, "seq": 3, "kind": "EXEC", "pid": 7, "image": "/etl"}
+{"host": "h", "boot": "b1", "tick": 0, "seq": 1, "kind": "SNAPSHOT", "processes": [{"pid": 1, "birth_id": "init", "image": "/init"}, {"pid": 7, "birth_id": "old7", "image": "/old"}]}

@@ -1,0 +1,21 @@
+{
+  "order": [
+    "tick",
+    "seq"
+  ],
+  "domain": [
+    "host",
+    "boot"
+  ],
+  "event_types": [
+    "SNAPSHOT",
+    "FORK",
+    "EXEC",
+    "EXIT",
+    "LOST"
+  ],
+  "invalid_event": "diagnose and leave state unchanged",
+  "gap_policy": "all samples unresolved until next authoritative SNAPSHOT",
+  "max_rows": 200,
+  "duplicate_seq": "reject entire host/boot domain before replay"
+}
