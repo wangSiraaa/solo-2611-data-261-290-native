@@ -1,0 +1,22 @@
+[
+  {
+    "row_id": "a",
+    "group": "G",
+    "score": 10
+  },
+  {
+    "row_id": "b",
+    "group": "G",
+    "score": 10
+  },
+  {
+    "row_id": "c",
+    "group": "G",
+    "score": 5
+  },
+  {
+    "row_id": "z",
+    "group": "H",
+    "score": 7
+  }
+]

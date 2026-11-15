@@ -1,0 +1,62 @@
+[
+  {
+    "batch_id": "b1",
+    "ops": [
+      {
+        "op": "put",
+        "row_id": "c",
+        "group": "G",
+        "score": 12
+      }
+    ]
+  },
+  {
+    "batch_id": "b2",
+    "ops": [
+      {
+        "op": "delete",
+        "row_id": "c"
+      },
+      {
+        "op": "put",
+        "row_id": "b",
+        "group": "H",
+        "score": 20
+      }
+    ]
+  },
+  {
+    "batch_id": "b3",
+    "ops": [
+      {
+        "op": "put",
+        "row_id": "x",
+        "group": "G",
+        "score": 0
+      },
+      {
+        "op": "put",
+        "row_id": "x",
+        "group": "G",
+        "score": 100
+      },
+      {
+        "op": "delete",
+        "row_id": "x"
+      }
+    ]
+  },
+  {
+    "batch_id": "b4",
+    "ops": [
+      {
+        "op": "delete",
+        "row_id": "a"
+      },
+      {
+        "op": "delete",
+        "row_id": "does-not-exist"
+      }
+    ]
+  }
+]

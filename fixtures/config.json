@@ -1,0 +1,7 @@
+{
+  "k": 2,
+  "order": [
+    "score DESC",
+    "row_id ASC (Unicode codepoint)"
+  ]
+}

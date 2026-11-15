@@ -1,0 +1,1 @@
+初始行id唯一。按操作列表顺序处理 put（全行替换或新增）、delete（必须当时存在）。组内按 score DESC,row_id Unicode码点ASC 排序，取前K并编号1..K。物化输出行完整身份/值为 (group,rank,row_id,score)。每批比较批前与批后的输出行：旧有新无输出 retract，新有旧无输出 insert，完全相同不输出。一个 row_id 的名次/分组/分数改变需要撤旧插新。delta 内先 retract 后 insert，各自按group、rank、row_id排序。一个批次内中间出现过的临时排名不发布。非法操作整批拒绝、没有 delta、状态保持批前。batch_id 是本题输入的唯一标签，不要求跨进程幂等协议。
