@@ -1,0 +1,1 @@
+哈希 h(k)=(k*40503) mod 65536。目录取 h 的最低 global_depth 位。初始 global_depth=1，有两个 local_depth=1 的空桶；本样例容量为2，配置允许容量2或3。完整 key 唯一，put 同 key 替换 value，不增加占用。溢出桶按下一个低位一分为二；local_depth 等于 global_depth 时先将目录倍增。所有指向旧桶的目录项均应重新分派，不能只改本次命中的目录格。delete 不存在 key 返回 not_found；删除不合并桶、不缩目录。key 是 0..65535 的整数（bool 非整数），value 是最多 64 个 Unicode 码点的文本。奇乘法在 16 位域内是置换，容量 2 的桶不会在深度 16 仍溢出。正常关闭重开必须保留索引。

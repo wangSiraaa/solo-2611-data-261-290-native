@@ -1,0 +1,76 @@
+[
+  {
+    "op": "put",
+    "key": 0,
+    "value": "v0"
+  },
+  {
+    "op": "put",
+    "key": 8,
+    "value": "v8"
+  },
+  {
+    "op": "put",
+    "key": 16,
+    "value": "v16"
+  },
+  {
+    "op": "put",
+    "key": 24,
+    "value": "v24"
+  },
+  {
+    "op": "put",
+    "key": 1,
+    "value": "v1"
+  },
+  {
+    "op": "put",
+    "key": 9,
+    "value": "v9"
+  },
+  {
+    "op": "put",
+    "key": 2,
+    "value": "v2"
+  },
+  {
+    "op": "put",
+    "key": 10,
+    "value": "v10"
+  },
+  {
+    "op": "put",
+    "key": 3,
+    "value": "v3"
+  },
+  {
+    "op": "put",
+    "key": 11,
+    "value": "v11"
+  },
+  {
+    "op": "put",
+    "key": 8,
+    "value": "changed"
+  },
+  {
+    "op": "delete",
+    "key": 16
+  },
+  {
+    "op": "get",
+    "key": 8
+  },
+  {
+    "op": "get",
+    "key": 16
+  },
+  {
+    "op": "close_reopen"
+  },
+  {
+    "op": "get",
+    "key": 24
+  }
+]

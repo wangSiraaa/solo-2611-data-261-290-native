@@ -1,0 +1,8 @@
+{
+  "bucket_capacity": 2,
+  "key_min": 0,
+  "key_max": 65535,
+  "hash": "(key * 40503) % 65536",
+  "directory_bits": "least-significant",
+  "initial_depth": 1
+}
