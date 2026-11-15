@@ -1,0 +1,44 @@
+[
+  {
+    "interval_id": "plus",
+    "chrom": "chr1",
+    "start": 11,
+    "end": 15,
+    "strand": "+"
+  },
+  {
+    "interval_id": "split",
+    "chrom": "chr1",
+    "start": 18,
+    "end": 28,
+    "strand": "+"
+  },
+  {
+    "interval_id": "gap",
+    "chrom": "chr1",
+    "start": 21,
+    "end": 24,
+    "strand": "+"
+  },
+  {
+    "interval_id": "minus",
+    "chrom": "chr1",
+    "start": 52,
+    "end": 58,
+    "strand": "+"
+  },
+  {
+    "interval_id": "ambiguous",
+    "chrom": "chr1",
+    "start": 26,
+    "end": 29,
+    "strand": "-"
+  },
+  {
+    "interval_id": "none",
+    "chrom": "chr1",
+    "start": 80,
+    "end": 85,
+    "strand": "+"
+  }
+]
