@@ -1,0 +1,14 @@
+[
+  {
+    "index": 0,
+    "path": "pieces/chunk-0.bin"
+  },
+  {
+    "index": 1,
+    "path": "pieces/bad.bin"
+  },
+  {
+    "index": 2,
+    "path": "pieces/chunk-2.bin"
+  }
+]

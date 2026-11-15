@@ -1,0 +1,8 @@
+{
+  "format": "BEP3 multi-file",
+  "max_files": 20,
+  "max_pieces": 64,
+  "max_total_bytes": 1048576,
+  "hash": "SHA1 per entire piece",
+  "network": false
+}
