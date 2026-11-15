@@ -1,0 +1,22 @@
+[
+  {
+    "event_id": "e6",
+    "kind": "customer",
+    "customer": [
+      "A",
+      "new"
+    ],
+    "name": "Temporary",
+    "segment": "other"
+  },
+  {
+    "event_id": "e7",
+    "kind": "customer",
+    "customer": [
+      "A",
+      "7"
+    ],
+    "name": "Contradiction",
+    "segment": "retail"
+  }
+]

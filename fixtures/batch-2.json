@@ -1,0 +1,22 @@
+[
+  {
+    "event_id": "e4",
+    "kind": "customer",
+    "customer": [
+      "A",
+      "7"
+    ],
+    "name": "Alice",
+    "segment": "retail"
+  },
+  {
+    "event_id": "e5",
+    "kind": "sale",
+    "sale_id": "s4",
+    "customer": [
+      "A",
+      "7"
+    ],
+    "amount_cents": 150
+  }
+]
