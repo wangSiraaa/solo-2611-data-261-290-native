@@ -1,0 +1,16 @@
+{
+  "max_messages": 100,
+  "key": [
+    "conversation_id",
+    "message_id"
+  ],
+  "roles": [
+    "system",
+    "user",
+    "assistant",
+    "tool"
+  ],
+  "target": "assistant with nonempty content and no tool_calls",
+  "supervision": "only selected target message",
+  "call_scope": "one outstanding assistant tool-call group"
+}

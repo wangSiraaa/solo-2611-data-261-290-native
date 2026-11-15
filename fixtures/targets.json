@@ -1,0 +1,26 @@
+[
+  {
+    "conversation_id": "c",
+    "message_id": "done"
+  },
+  {
+    "conversation_id": "c",
+    "message_id": "done2"
+  },
+  {
+    "conversation_id": "c",
+    "message_id": "branch"
+  },
+  {
+    "conversation_id": "c",
+    "message_id": "bad"
+  },
+  {
+    "conversation_id": "c",
+    "message_id": "bad2"
+  },
+  {
+    "conversation_id": "c",
+    "message_id": "loop1"
+  }
+]
